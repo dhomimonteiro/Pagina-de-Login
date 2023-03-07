@@ -1,0 +1,146 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-image: url(/src/imgs/5401904.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Esconde a navbar e o footer por padrão*/
+.cabeçalho, footer {
+    opacity: 0;
+}
+
+/*Mostra a navbar e o footer quando o mouse passa por cima*/
+.cabeçalho:hover, footer:hover {
+    opacity: 1;
+    background-color: var(--roxo-escuro);
+    transition: 0.5s;
+}
+.cabeçalho a {
+    text-decoration: none;
+    color: #f0e0ff !important;
+}
+
+.cabeçalho a:hover {
+    color: #97899c !important;
+    transition: 0.5s;
+}
+
+.botão {
+    color: #d0d0d0;
+}
+
+.navbar-toggler {
+    color: #9B59B6;
+}
+
+.formulario {
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: linear-gradient(to bottom, #f3f3f3, #c7bdd3);
+    font-family: 'Comfortaa', cursive;
+    box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+.login {
+    border: none;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: linear-gradient(to bottom, #f3f3f3, #c7bdd3);
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formTitulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/*Personaliza os inputs*/
+.formArea {
+    /*Aumenta o tamanho pra 100% do elemento pai*/
+    background-color: rgba(255,255,255, .4);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    letter-spacing: 1px;
+    /*Afasta o texto das bordas do input*/
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.formArea:active, .formArea:focus {
+    outline: none;
+    outline: solid 1px rgba(0, 0, 0, 0.3)
+}
+
+/*Personalizar os labels dos inputs*/
+.label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    display: inline;
+}
+
+/*Personaliza o botão de enviar*/
+.enviar {
+    border: none;
+    background-color: var(--roxo-escuro);
+    color: whitesmoke;
+    min-width: 100px;
+    width: 30%;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.enviar:hover {
+    background-color: #655579;
+    transition: 0.2s;
+}
+
+.social-medias button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-right: 15px;
+}
+
+.social-medias button:hover {
+    color: #946ea3;
+    transform: scale(1.2, 1.2);
+    transition: .2s;
+}
+
+.show-psswd {
+    display: flex;
+    flex: row;
+    justify-content: end;
+    margin-top: 4px;
+}
+
+.mostrar-senha {
+    display: inline;
+    vertical-align: middle;
+}
+.mostrar-senha-label {
+    font-family: 'Comfortaa', cursive;
+    vertical-align: middle;
+    
+    font-size: 0.8rem;
+}
+
+input[type= "checkbox"]{
+    background-color: #fff;
+    width: 0.9em;
+    height: 0.9em;
+    transform: translateY(-0.075em);
+}
+
